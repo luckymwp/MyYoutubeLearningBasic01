@@ -142,4 +142,14 @@
         android:textStyle="bold|italic"
         android:textColor="#050781" />
 
+    <AnalogClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_above="@+id/button"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#dccbe1"
+        android:textAlignment="center" />
+
 </RelativeLayout>
