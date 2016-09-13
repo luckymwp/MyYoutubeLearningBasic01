@@ -53,10 +53,10 @@
         android:text="Result"
         android:id="@+id/textView4"
         android:textSize="30sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/abc_btn_colored_borderless_text_material"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/var2"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -64,12 +64,13 @@
         android:id="@+id/var1"
         android:textSize="30sp"
         android:layout_below="@+id/textView"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
         android:layout_alignLeft="@+id/var2"
         android:layout_alignStart="@+id/var2"
         android:textColor="@android:color/holo_green_light"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:background="#82ffffff" />
 
     <EditText
         android:layout_width="match_parent"
@@ -77,26 +78,27 @@
         android:id="@+id/var2"
         android:textSize="30sp"
         android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3"
         android:layout_alignLeft="@+id/textView4"
         android:layout_alignStart="@+id/textView4"
         android:textColor="@android:color/holo_green_light"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:background="#82ffffff" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/reuslt"
         android:textSize="30sp"
-        android:layout_below="@+id/var2"
-        android:layout_marginTop="91dp"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:background="#82ffffff"
+        android:layout_below="@+id/textView4"
         android:layout_alignLeft="@+id/textView4"
         android:layout_alignStart="@+id/textView4"
-        android:textColor="@android:color/holo_green_light"
-        android:textStyle="bold" />
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
     <Button
         android:layout_width="wrap_content"
