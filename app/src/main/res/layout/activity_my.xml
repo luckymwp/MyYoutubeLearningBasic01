@@ -19,36 +19,35 @@
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Var1"
+        android:text="Input Var1"
         android:id="@+id/textView"
         android:textSize="30sp"
         android:layout_alignWithParentIfMissing="false"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
         android:textColor="@color/abc_btn_colored_borderless_text_material"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Var2"
+        android:text="Input Var2"
         android:id="@+id/textView3"
         android:textSize="30sp"
         android:layout_below="@+id/var1"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
         android:textColor="@color/abc_btn_colored_borderless_text_material"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Result"
         android:id="@+id/textView4"
@@ -56,7 +55,8 @@
         android:textColor="@color/abc_btn_colored_borderless_text_material"
         android:textStyle="bold"
         android:layout_below="@+id/var2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
@@ -64,13 +64,10 @@
         android:id="@+id/var1"
         android:textSize="30sp"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/var2"
-        android:layout_alignStart="@+id/var2"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
-        android:background="#82ffffff" />
+        android:background="#82ffffff"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
@@ -78,13 +75,10 @@
         android:id="@+id/var2"
         android:textSize="30sp"
         android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
-        android:background="#82ffffff" />
+        android:background="#82ffffff"
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="match_parent"
@@ -95,9 +89,7 @@
         android:textStyle="bold"
         android:background="#82ffffff"
         android:layout_below="@+id/textView4"
-        android:layout_toRightOf="@+id/add"
-        android:layout_alignRight="@+id/multi"
-        android:layout_alignEnd="@+id/multi" />
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="wrap_content"
@@ -105,9 +97,9 @@
         android:text="+"
         android:id="@+id/add"
         android:textSize="30sp"
-        android:layout_alignTop="@+id/deduct"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reuslt" />
 
     <Button
         android:layout_width="wrap_content"
@@ -116,8 +108,7 @@
         android:id="@+id/deduct"
         android:textSize="30sp"
         android:layout_below="@+id/reuslt"
-        android:layout_toRightOf="@+id/add"
-        android:layout_toEndOf="@+id/add" />
+        android:layout_toRightOf="@+id/add" />
 
     <Button
         android:layout_width="wrap_content"
@@ -125,9 +116,8 @@
         android:text="x"
         android:id="@+id/multi"
         android:textSize="30sp"
-        android:layout_alignTop="@+id/deduct"
         android:layout_toRightOf="@+id/deduct"
-        android:layout_toEndOf="@+id/deduct" />
+        android:layout_below="@+id/reuslt" />
 
     <Button
         android:layout_width="wrap_content"
@@ -135,9 +125,9 @@
         android:text="/"
         android:id="@+id/divide"
         android:textSize="30sp"
-        android:layout_alignTop="@+id/multi"
         android:layout_toRightOf="@+id/multi"
-        android:layout_toEndOf="@+id/multi" />
+        android:layout_toEndOf="@+id/multi"
+        android:layout_below="@+id/reuslt" />
 
     <Button
         android:layout_width="match_parent"
