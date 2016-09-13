@@ -95,10 +95,9 @@
         android:textStyle="bold"
         android:background="#82ffffff"
         android:layout_below="@+id/textView4"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4" />
+        android:layout_toRightOf="@+id/add"
+        android:layout_alignRight="@+id/multi"
+        android:layout_alignEnd="@+id/multi" />
 
     <Button
         android:layout_width="wrap_content"
@@ -146,6 +145,11 @@
         android:text="About My Teacher"
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="#deab12"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#050781" />
 
 </RelativeLayout>
