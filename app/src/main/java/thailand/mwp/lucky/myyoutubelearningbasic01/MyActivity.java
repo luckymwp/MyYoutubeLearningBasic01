@@ -40,11 +40,16 @@ public class MyActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try{
+                    double a = Integer.parseInt(var1.getText().toString());
+                    double b = Integer.parseInt(var2.getText().toString());
+                }catch(Exception ex) {
+                    //result.setText(ex.toString());
+                    result.setText("must be number");
+                }
                 double a = Integer.parseInt(var1.getText().toString());
                 double b = Integer.parseInt(var2.getText().toString());
-
                 double c = (a + b);
-
                 result.setText(String.valueOf(c));
             }
         });
